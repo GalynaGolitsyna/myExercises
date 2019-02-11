@@ -8,7 +8,6 @@ public class Main {
         View viewii = new View();
         Controller controller = new Controller(modelli, viewii);
         controller.processingUser();
-        controller.processingUserS();
         controller.message();
 
     }
