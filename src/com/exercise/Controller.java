@@ -18,16 +18,16 @@ public class Controller {
 
     public void processingUser() {
         Scanner scan = new Scanner(System.in);
-        modelli.setText(inputIntValueWithScanner(scan,View.INITIAL_HELLO,CORRECT_B));
+        modelli.setText(inputIntValueWithScanner(scan, View.INITIAL_HELLO, CORRECT_B));
         modelli.setText2(inputIntValueWithScanner(scan, View.INITIAL_WORLD, CORRECT_A));
     }
 
 
     private String inputIntValueWithScanner(Scanner scan, String firstGreeting, String correctResult) {
         viewii.printMessages(firstGreeting);
-        while(scan.hasNext()){
+        while (scan.hasNext()) {
             String nextLine = scan.next();
-            if(nextLine.equalsIgnoreCase(correctResult)){
+            if (nextLine.equalsIgnoreCase(correctResult)) {
                 return nextLine;
             }
             viewii.printMessages(View.WRONG_MESSAGE);
@@ -37,8 +37,8 @@ public class Controller {
     }
 
 
- public void message(){
+    public void message() {
         viewii.printGreeting(View.GREETING_IS, modelli.getText(), View.BACKSPACE, modelli.getText2());
- }
+    }
 }
 
