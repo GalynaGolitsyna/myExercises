@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Controller {
 
-
     public static final String CORRECT_A = "world!";
     public static final String CORRECT_B = "Hello";
 
@@ -20,6 +19,7 @@ public class Controller {
         Scanner scan = new Scanner(System.in);
         modelli.setText(inputIntValueWithScanner(scan, View.INITIAL_HELLO, CORRECT_B));
         modelli.setText2(inputIntValueWithScanner(scan, View.INITIAL_WORLD, CORRECT_A));
+
     }
 
 
@@ -34,6 +34,7 @@ public class Controller {
         }
 
         return scan.next();
+
     }
 
 
